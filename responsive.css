@@ -237,7 +237,7 @@
         width: 180px;
         margin: 20px auto;
         bottom: 9px;
-        right: 130px;
+        right: 150px;
         display: block;
     }
 
@@ -245,7 +245,7 @@
         position: relative;
         bottom: 115px;
         padding: 12px 30px;
-        left: 30px;
+        left: 50px;
     }
 
     .services {
@@ -515,4 +515,5 @@
     .modal-text {
         padding: 30px;
     }
+
 }
