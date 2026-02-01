@@ -1,0 +1,518 @@
+
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    /* Disable full-page slider on mobile */
+    .page-slider {
+        height: auto !important;
+        overflow: visible !important;
+        position: static !important;
+    }
+
+    .page {
+        position: static !important;
+        height: auto !important;
+        min-height: auto !important;
+        transform: none !important;
+    }
+
+    /* Kill all transform-based navigation states */
+    .page-slider.show-home .page,
+    .page-slider.show-about .page,
+    .page-slider.show-services .page,
+    .page-slider.show-projects .page,
+    .page-slider.show-contact .page {
+        transform: none !important;
+    }
+
+    /* Enable natural scrolling */
+    html,
+    body {
+        height: auto !important;
+        overflow-y: auto !important;
+        overflow-x: hidden;
+        touch-action: pan-y;
+        overscroll-behavior: auto;
+    }
+
+
+
+    /* Sections behave like normal content */
+    section,
+    .projects,
+    .contact {
+        height: auto !important;
+        min-height: auto !important;
+        overflow: visible !important;
+        position: static !important;
+    }
+
+    /* HEADER */
+    .main-header {
+        height: 65px;
+        padding: 0 20px;
+    }
+
+    /* LOGO */
+    .logo img {
+        width: 150px;
+        top: 0;
+        right: 0;
+    }
+
+    /* MENU BUTTON */
+    .menu-btn {
+        width: 30px;
+        height: 22px;
+    }
+
+    .menu-btn span {
+        height: 2.5px;
+    }
+
+    /* MOBILE SLIDE NAV */
+    .slide-nav {
+        position: fixed;
+        top: 70px;
+        left: 0px;
+        width: 100%;
+        height: calc(39vh - 70px);
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(15px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transform: translateX(100%);
+        transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+        pointer-events: none;
+    }
+
+    .slide-nav.active {
+        transform: translateX(0);
+        pointer-events: auto;
+    }
+
+    .slide-nav a {
+        font-size: 22px;
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    .slide-nav.active a {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+
+    .hero {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 100px 20px 40px;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        top: 0;
+    }
+
+    .hero-content p {
+        position: relative;
+        top: 400px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* VIDEO */
+    .hero-image video {
+        position: absolute;
+        width: 200px;
+        right: 99px;
+        top: 300px;
+
+
+
+    }
+
+    .hero-image h3 {
+        position: relative;
+        font-size: 42px;
+        line-height: 1.4;
+        top: 153px;
+        right: 10px;
+    }
+
+    /* PROFILE BANNER */
+    .banner {
+        position: relative;
+        width: 220px;
+        height: 220px;
+        top: -330px;
+        right: 10px;
+    }
+
+    /* KNOWLEDGE */
+    .knowledge {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .heading {
+        position: relative;
+        width: 100%;
+        top: 250px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .heading small {
+        position: static;
+        font-size: 13px;
+
+    }
+
+    .heading h4 small {
+        display: none;
+    }
+
+    .skills01 {
+        position: absolute;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 14px;
+        top: 700px;
+        left: 25px;
+        text-align: center;
+    }
+
+    .skill {
+        width: 65px;
+        height: 65px;
+        font-size: 2.4rem;
+    }
+
+        .about {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .left {
+        margin-bottom: 40px;
+        perspective: none;
+    }
+
+    .image-wrapper {
+        width: 260px;
+        height: 260px;
+        bottom: 0;
+    }
+
+    .right {
+    margin-top: 10px;
+        padding-left: 0;
+    }
+
+    .right h1 {
+        font-size: 24px;
+    }
+
+    .right p {
+        font-size: 14px;
+    }
+
+    .points {
+        text-align: left;
+    }
+    .points li samp {
+        padding-left: 25px;
+    }
+
+    .signature {
+        width: 180px;
+        margin: 20px auto;
+        bottom: 9px;
+        right: 130px;
+        display: block;
+    }
+
+    .cv-btn {
+        position: relative;
+        bottom: 115px;
+        padding: 12px 30px;
+        left: 30px;
+    }
+
+    .services {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        gap: 50px;
+        overflow: visible;
+    }
+
+    /* LEFT */
+    .services-left {
+        bottom: 0;
+    }
+
+    .services-left h1 {
+        font-size: 26px;
+    }
+
+    .services-left p {
+        font-size: 14px;
+    }
+
+    /* SKILLS FIX */
+    .skill01 span {
+        position: static !important;
+        padding-left: 0 !important;
+        display: inline-block;
+        font-size: 14px;
+    }
+
+    .skill01 span:last-child {
+        float: right;
+    }
+
+    .bar {
+        width: 100%;
+    }
+
+    /* RIGHT → VERTICAL CARDS */
+    .services-right {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        bottom: 0;
+    }
+
+    .card {
+        height: 140px;
+    }
+
+    /* Disable float animation for smoother mobile UX */
+    .float {
+        animation: none;
+    }
+
+
+     .projects {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .title {
+        font-size: 30px;
+        margin-bottom: 35px;
+        padding-top: 20px;
+    }
+
+    .project-grid {
+        gap: 20px;
+    }
+
+    .project-card {
+        height: 100px;
+    }
+
+    /* MODAL MOBILE */
+    .modal-content {
+        bottom:  -1400px;
+        position: relative;
+        flex-direction: column;
+        width: 92%;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .modal-content img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .modal-text {
+        padding: 22px;
+    }
+
+    .modal-text h2 {
+        font-size: 22px;
+    }
+
+    .modal-text p {
+        font-size: 14px;
+    }
+
+    .close {
+        top: 10px;
+        right: 10px;
+        width: 36px;
+        height: 36px;
+    }
+
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* HEADER */
+    .main-header {
+        height: 75px;
+        padding: 0 30px;
+    }
+
+    /* LOGO */
+    .logo img {
+        width: 180px;
+        top: 5px;
+        right: 0;
+    }
+
+    /* MENU BUTTON */
+    .menu-btn {
+        width: 32px;
+        height: 24px;
+    }
+
+    .menu-btn span {
+        height: 3px;
+    }
+
+    /* SLIDE NAV */
+    .slide-nav {
+        position: absolute;
+        right: 90px;
+        top: 28px;
+        gap: 28px;
+        pointer-events: none;
+    }
+
+    /* LINKS */
+    .slide-nav a {
+        font-size: 17px;
+        transform: translateX(40px);
+    }
+
+    /* ACTIVE */
+    .slide-nav.active a {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    /* STAGGER TIMING (SMOOTHER FOR TABLET) */
+    .slide-nav.active a:nth-child(1) {
+        transition-delay: 0.1s;
+    }
+
+    .slide-nav.active a:nth-child(2) {
+        transition-delay: 0.2s;
+    }
+
+    .slide-nav.active a:nth-child(3) {
+        transition-delay: 0.3s;
+    }
+
+    .slide-nav.active a:nth-child(4) {
+        transition-delay: 0.4s;
+    }
+
+    .slide-nav.active a:nth-child(5) {
+        transition-delay: 0.5s;
+    }
+
+    .about {
+        padding: 60px 40px;
+    }
+
+    .image-wrapper {
+        width: 320px;
+        height: 320px;
+        bottom: 0;
+    }
+
+    .right {
+        padding-left: 40px;
+    }
+
+    .right h1 {
+        font-size: 28px;
+    }
+
+    .right p {
+        font-size: 14px;
+    }
+
+    .signature {
+        width: 220px;
+        bottom: 30px;
+        right: 0;
+    }
+
+    .cv-btn {
+        right: 0;
+        bottom: 40px;
+    }
+
+    .services {
+        height: auto;
+        padding: 60px 40px;
+        gap: 60px;
+    }
+
+    .services-left h1 {
+        font-size: 32px;
+    }
+
+    /* SKILLS */
+    .skill01 span {
+        position: static !important;
+        padding-left: 0 !important;
+    }
+
+    .bar {
+        width: 100%;
+    }
+
+    /* CARDS → 2 per row */
+    .services-right {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        bottom: 0;
+    }
+
+    .card {
+        height: 150px;
+    }
+
+    
+    .projects {
+        height: auto;
+        padding: 80px 40px;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+
+    .project-grid {
+        gap: 30px;
+    }
+
+    .project-card {
+        height: 220px;
+    }
+
+    /* MODAL */
+    .modal-content {
+        width: 90%;
+    }
+
+    .modal-text {
+        padding: 30px;
+    }
+}
